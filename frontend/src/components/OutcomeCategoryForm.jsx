@@ -23,7 +23,7 @@ function OutcomeCategoryForm({ onSubmit }) {
   };
   
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <div className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">Category Label</label>
@@ -52,13 +52,14 @@ function OutcomeCategoryForm({ onSubmit }) {
       
       <div className="flex justify-end">
         <button
-          type="submit"
+          type="button"
+          onClick={handleSubmit}
           className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
         >
           Add Category
         </button>
       </div>
-    </form>
+    </div>
   );
 }
 

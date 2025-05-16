@@ -78,7 +78,8 @@ function App() {
 
   return (
     <div className="container mx-auto px-4 py-8 mb-10">
-      <h1 className="text-3xl font-bold text-center mb-8">FairXORNG Drop Simulator</h1>
+      <h1 className="text-3xl font-bold text-center mb-2">FairXORNG Drop Simulator</h1>
+      <p className="text-center text-gray-600 mb-8">A simulator for a fair random number generation system with dynamic probability adjustment</p>
       
       {errorMessage && (
         <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
